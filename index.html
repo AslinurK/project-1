@@ -9,7 +9,7 @@
   <meta name="author" content="">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
 
-  <title>Quarantine Fun!</title>
+  <title>Qurantine Date Night</title>
 
 
 
@@ -30,14 +30,14 @@
 
 </head>
  
-<body style="background-color: #ffffff">
+<body style="background-color: #042a2b">
     
 <header>
   <div class="mainheader">
     <div class="hheader">
-    <h1>Movie Diner</h1>
+    <h1>DinnerReel</h1>
     </div>
-    <p>Date Night at Home</p>
+    <p>Dinner and Movie Night at Home</p>
   </div>
 </header>
    
@@ -54,58 +54,28 @@
                 <div class="row">
                     <div class="col-md-12" id="searchbox">
                         <!-- search -->
-                        <h2 style="text-align: center;"></h2>
-                        <input id="searchinput" placeholder=>
+                        <h2 style="text-align: center;">Find a Recipe:</h2>
+                        <input id="searchinput" placeholder="Search...">
                         <div id="historylist"></div>
                         <div id="checkbox">
-                          <h4></h4>
-                          <!-- movie 1 -->
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="Comedy">
-                            <label class="form-check-label" for="defaultCheck1">
-                              Comedy
-                            </label>
-                          </div>
-                
-                          <!-- movie 2 -->
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="Documentary">
-                            <label class="form-check-label" for="defaultCheck1">
-                              Documentary
-                            </label>
-                          </div>
-                
-                          <!-- movie 3 -->
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="Horror">
-                            <label class="form-check-label" for="defaultCheck1">
-                              Horror
-                            </label>
-                          </div>
-                
-                          <!-- movie 4 -->
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="Drama">
-                            <label class="form-check-label" for="defaultCheck1">
-                              Drama
-                            </label>
-                          </div>
-                
-                          <!-- movie 5 -->
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="Action">
-                            <label class="form-check-label" for="defaultCheck1">
-                              Action
-                            </label>
-                          </div>
-                
-                          <!-- movie 5 -->
-                          <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="Mystery">
-                            <label class="form-check-label" for="defaultCheck1">
-                              Mystery
-                            </label>
-                          </div>
+                        <!-- movie-->
+                          <h4 style="text-align: center;">Find a movie:</h4>
+                        <form>
+                            <div class="form-group">
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                                placeholder="Search..."
+                              />
+                            </div>
+                    
+                            <button type="submit" class="btn" id="search">
+                              Search a movie
+                            </button>
+                        </form>
+
                         </div>
                     </div>
                     <button id="search" class="btn btn-primary"><h5>Search</h5></button>
@@ -116,9 +86,9 @@
         <!-- main body/results -->
         <div class="col-md-9 results">
 
-          <!---->
+          <!-- subgrid -->
           <div class="container-fluid" id="mainbody">
-            <!---->
+            <!-- sub row 1 -->
             <div class="row drinkdish"></div>
           </div>
         </div>
@@ -127,9 +97,20 @@
 
     <!-- row 3 (footer) -->
     <footer> 
-
+      <p id="copyright"> &copy; Copyright</p>
   
   </footer>
+    
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
 
   <script src="script.js"></script>
 </body>
