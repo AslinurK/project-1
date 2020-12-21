@@ -1,52 +1,66 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
-* {
-    box-sizing: border-box;
+
+
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
 }
 
-body {
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: "Poppins", sans-serif;
-    margin: 0 0 3rem;
-    min-height: 100vh;
-}
 
-h3 {
-    color: rgb(66, 21, 83);
-    font-size: 1.8rem;
-    margin-bottom: 0;
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
 }
-
-ul {
-    list-style-type: none;
-    padding: 0;
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
 }
-
-li {
-    margin: 0.5rem 0;
-    text-align: center;
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-
-li a {
-    color: rgb(84, 21, 143);
-    font-size: 1.2rem;
-    text-decoration: none;
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
 }
-
-footer {
-    background-color: rgb(119, 65, 173);
-    color: #ffffff;
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
     padding: 1rem;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
-footer a {
-    color: #f5f5f5;
-}
