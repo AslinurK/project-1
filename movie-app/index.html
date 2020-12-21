@@ -3,22 +3,64 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Movie App</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <title>Movie App</title>        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
         <link rel="stylesheet" href="style.css" />
         <script src="script.js" defer></script>
     </head>
     <body>
+<!-- Navigation -->
+ <nav class="navbar navbar-expand-md navbar-light bg-light sticky top">    
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/assets/logoo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class=nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class=nav-item">
+            <a class="nav-link" href="/recipe-app/index.html">Food</a>
+          </li>
+          <li class=nav-item">
+            <a class="nav-link" href="/movie-app/index.html">Movie</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+
+<!-- Jumbotron -->
+  <div class="container-fluid">
+    <div class="row jumbotron text-center">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-12">
+        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae nulla facere, nesciunt omnis doloremque ratione, molestiae, itaque fugiat esse nihil reprehenderit soluta dolorem. Animi, exercitationem ipsum nisi vel enim saepe?</p>
+      </div>
+    </div>
+    </div>
+
+<!-- Search bar for the movie-->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+      <div class="col-xs-12 col-sm-12 col-md-12">
         <header>
             <form id="form">
                 <input
                     type="text"
                     id="search"
-                    placeholder="Search"
+                    placeholder="Search for a Movie"
                     class="search"
                 />
             </form>
         </header>
         <main id="main"></main>
+      </div>
+      </div>
+      </div>
     </body>
 </html>
