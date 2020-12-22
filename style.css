@@ -38,8 +38,8 @@ html,body {
     padding-bottom: 1rem;
 }
 .btn-primary {
-    background-color: #6648b1;
-    border: 1px solid #6648b1;
+    background-color: #817e7e8c;
+    border: 1px solid #d4d4d4;
 }
 .btn-primary:hover {
     background-color: #563d7c;
@@ -67,11 +67,7 @@ html,body {
     font-size: 4em;
     margin: 1rem;
 }
-footer {
-    background-color: #3f3f3f;
-    color: #d5d5d5;
-    padding-top: 2rem;
-}
+
 hr.light {
     border-top: 1px solid #d5d5d5;
     width: 75%;

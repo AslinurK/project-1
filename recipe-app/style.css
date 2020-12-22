@@ -221,3 +221,11 @@ header button {
 .meal-info h1 {
     text-align: center;
 }
+.lead {
+    margin: 25px 250px 25px 250px;
+    text-align: center;
+
+}
+footer a {
+    color: #d5d5d5;
+}
