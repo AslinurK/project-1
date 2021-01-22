@@ -1,4 +1,4 @@
-##Dine N' View
+## Dine N' View
 
 Dine N' View allows a user who wants to create a dine-in theater-caliber experience at home. 
 
